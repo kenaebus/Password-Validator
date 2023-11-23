@@ -1,0 +1,59 @@
+* {
+    background-color: #1c1c1e;
+}
+
+.container {
+    margin: auto;
+    margin-top: 10%;
+    width: 50%;
+}
+
+.form-input {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 45%;
+    padding: 20px 60px 20px 20px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 10px;
+    background-color: transparent;
+}
+
+input {
+    background-color: white;
+    font-size: 19px;
+    width: 100%;
+    padding: 10px 18px;
+    margin: 5px 0px 10px 0px;
+}
+
+#passWordConditions, #emailConditions {
+    color: red;
+}
+
+ul, li {
+    background-color: antiquewhite;
+}
+
+/* Submit button*/
+[type=submit] {
+   border-color: rgb(51, 33, 155);
+   background-color: white;
+   color: rgb(51, 33, 155);
+   font-size: 20px;
+   width: 50%;
+   border-radius: 6px;
+   transition: 0.5s;
+   margin: 0px 10px 0px 30%;
+
+   &:hover {
+    background-color: rgb(51, 33, 155);
+    color: white;
+   }
+
+}

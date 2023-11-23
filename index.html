@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Validator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form-input">
+            <label>User Name:</label>
+            <input type="text" onkeyup="checkConditions('username')">
+            <div id="userNameConditions">
+                <ul>
+                    <li>No conditions</li>
+                </ul>
+            </div>
+            <br>
+            <label>Password:</label>
+            <br>
+            <input type="text" onkeyup="checkConditions('password')" id="passwordValue">
+            <div id="passWordConditions">
+                <ul>
+                    <li id="isLong">Must be at least 6 characters long</li>
+                    <li id="isSpecial">Must have at least one special character</li>
+                    <li id="isUpper">Must have at least one uppercase letter</li>
+                    <li id="isNum">Must have at least one number</li>
+                </ul>
+            </div>
+            <label for="">Email Address:</label>
+            <br>
+            <input name="email" type="text" onkeyup="checkConditions('email')" id="emailValue">
+            <div id="emailConditions">
+                <ul>
+                    <li id="isEmail">Must be a valid email address</li>
+                </ul>
+            </div>
+            <br>
+            <input type="submit" onclick="authorize()" >
+        </form>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
